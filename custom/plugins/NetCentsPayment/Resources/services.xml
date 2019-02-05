@@ -3,8 +3,8 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="cryptocurrency_payments_via_coingate.coingate_payment_service"
-                 class="CoinGatePayment\Components\CoinGatePayment\CoinGatePaymentService">
+        <service id="cryptocurrency_payments_via_netcents.netcents_payment_service"
+                 class="NetCentsPayment\Components\NetCentsPayment\NetCentsPaymentService">
         </service>
     </services>
 </container>

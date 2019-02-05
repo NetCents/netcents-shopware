@@ -1,10 +1,10 @@
 <?php
 
-namespace CoinGatePayment\Components\CoinGatePayment;
+namespace NetCentsPayment\Components\NetCentsPayment;
 
-require_once __DIR__ . '/../coingate-php/init.php';
+require_once __DIR__ . '/../netcents/init.php';
 
-class CoinGatePaymentService
+class NetCentsPaymentService
 {
     /**
      * @param $request \Enlight_Controller_Request_Request
@@ -33,10 +33,10 @@ class CoinGatePaymentService
         return md5(implode('|', [$amount, $customerId]));
     }
 
-    public function coingateCallback($order_id, $coingate_environment, $auth_token, $agent)
+    public function netcentsCallback($order_id, $coingate_environment, $auth_token, $agent)
     {
         try {
-            $order = \CoinGate\Merchant\Order::find($order_id, array(), array(
+            $order = \NetCents\Merchant\Order::find($order_id, array(), array(
                 'environment' => $coingate_environment,
                 'auth_token'  => $auth_token,
                 'user_agent'  => $agent,

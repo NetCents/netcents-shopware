@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element type="text" scope="locale">
+            <name>NetCentsCredentialsApiKey</name>
+            <label lang="en">API Key</label>
+        </element>
+        <element type="text" scope="locale">
+            <name>NetCentsCredentialsSecretKey</name>
+            <label lang="en">Secret Key</label>
+        </element>
+        <element type="text" scope="locale">
+            <name>NetCentsWebPluginId</name>
+            <label lang="en">Web Plugin Id</label>
+        </element>
+        <element type="text" scope="locale">
+            <name>NetCentsApiUrl</name>
+            <label lang="en">API Url</label>
+            <value>https://merchant.net-cents.com</value>
+        </element>
+    </elements>
+</config>

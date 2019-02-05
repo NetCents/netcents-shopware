@@ -1,6 +1,6 @@
 <?php
 
-namespace CoinGatePayment\Components\CoinGatePayment;
+namespace NetCentsPayment\Components\NetCentsPayment;
 
 class PaymentResponse
 {

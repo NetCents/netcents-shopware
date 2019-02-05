@@ -1,6 +1,6 @@
 <?php
 
-namespace CoinGatePayment;
+namespace NetCentsPayment;
 
 use Shopware\Components\Plugin;
 use Doctrine\ORM\Tools\ToolsException;
@@ -10,7 +10,7 @@ use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UninstallContext;
 use Shopware\Models\Payment\Payment;
 
-class CoinGatePayment extends Plugin
+class NetCentsPayment extends Plugin
 {
     /**
      * @param InstallContext $context
@@ -21,13 +21,13 @@ class CoinGatePayment extends Plugin
         $installer = $this->container->get('shopware.plugin_payment_installer');
 
         $options = [
-            'name' => 'cryptocurrency_payments_via_coingate',
-            'description' => 'Cryptocurrency Payments via CoinGate',
-            'action' => 'CoinGatePayment',
+            'name' => 'cryptocurrency_payments_via_netcents',
+            'description' => 'Cryptocurrency Payments via NetCents',
+            'action' => 'NetCentsPayment',
             'active' => 1,
             'position' => 0,
             'additionalDescription' =>
-                '<img src="custom/plugins/CoinGatePayment/plugin.png" alt="Cryptocurrency Payments via CoinGate" style="max-width:20%;" />'
+                '<img src="custom/plugins/NetCentsPayment/plugin.png" alt="Cryptocurrency Payments via NetCents" style="max-width:20%;" />'
         ];
         $installer->createOrUpdate($context->getPlugin(), $options);
     }
@@ -38,12 +38,12 @@ class CoinGatePayment extends Plugin
     public function uninstall(UninstallContext $context)
     {
         //$this->setActiveFlag($context->getPlugin()->getPayments(), false);
-		$db = $this->container->get('dbal_connection');
-		 $paymentId = Shopware()->Db()->fetchOne('SELECT id FROM s_core_paymentmeans where name = "cryptocurrency_payments_via_coingate"');
+		  $db = $this->container->get('dbal_connection');
+		 $paymentId = Shopware()->Db()->fetchOne('SELECT id FROM s_core_paymentmeans where name = "cryptocurrency_payments_via_netcents"');
 		 $db->exec('delete from s_core_paymentmeans_subshops where paymentID = ' . $paymentId );
 		 $db->exec('delete from s_core_paymentmeans_countries where paymentID = ' . $paymentId );
 		 $db->exec('delete from s_core_paymentmeans where id= ' . $paymentId  );
-		 
+
 		 $context->scheduleClearCache(InstallContext::CACHE_LIST_ALL);
     }
 
@@ -54,8 +54,8 @@ class CoinGatePayment extends Plugin
     {
         //$this->setActiveFlag($context->getPlugin()->getPayments(), false);
 		$db = $this->container->get('dbal_connection');
-		$db->exec('update s_core_paymentmeans set active = 0 where name = "cryptocurrency_payments_via_coingate"');
-		 
+		$db->exec('update s_core_paymentmeans set active = 0 where name = "cryptocurrency_payments_via_netcents"');
+
 		$context->scheduleClearCache(InstallContext::CACHE_LIST_ALL);
     }
 
@@ -66,8 +66,8 @@ class CoinGatePayment extends Plugin
     {
         //$this->setActiveFlag($context->getPlugin()->getPayments(), true);
 		 $db = $this->container->get('dbal_connection');
-		 $db->exec('update s_core_paymentmeans set active = 1 where name = "cryptocurrency_payments_via_coingate"');
-		 
+		 $db->exec('update s_core_paymentmeans set active = 1 where name = "cryptocurrency_payments_via_netcents"');
+
 		 $context->scheduleClearCache(InstallContext::CACHE_LIST_ALL);
     }
 

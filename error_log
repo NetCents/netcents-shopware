@@ -1,0 +1,173 @@
+[04-Feb-2019 23:43:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /home/ourdevwork/shopware.ourdevwork.com/custom/plugins/NetCentsPayment/Controllers/Frontend/NetCentsPayment.php on line 89
+[04-Feb-2019 23:46:45 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:46:46 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:46:53 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:46:53 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:46:55 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:46:56 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:00 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:01 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:04 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:05 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:07 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:07 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:07 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:07 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:07 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:08 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:20 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:21 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:22 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:22 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:23 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:23 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:25 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:25 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:48:29 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:50:03 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:50:53 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:50:54 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Zend_Session_Exception' with message 'You must call Zend_Session::setId() before any output has been sent to the browser; output started in /home/ourdevwork/shopware.ourdevwork.com/config.php/1' in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php:716
+Stack trace:
+#0 /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php(439): Zend_Session::setId('678ced11c020ea6...')
+#1 /home/ourdevwork/shopware.ourdevwork.com/engine/Shopware/Components/DependencyInjection/Bridge/Session.php(104): Zend_Session::start(Array)
+#2 /home/ourdevwork/shopware.ourdevwork.com/var/cache/production_201901211535/proxies/ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer.php(1793): Shopware\Components\DependencyInjection\Bridge\Session->createSession(Object(ShopwareProductionda3a7440e38f7ace93823175da3a380d92901f0dProjectContainer), Object(Shopware\Components\Session\PdoSessionHandler))
+#3 /home/ourdevwork/shopware.ourdevwork.com/vendor/symfony/dependenc in /home/ourdevwork/shopware.ourdevwork.com/engine/Library/Zend/Session.php on line 716
+[04-Feb-2019 23:52:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /home/ourdevwork/shopware.ourdevwork.com/custom/plugins/NetCentsPayment/Controllers/Frontend/NetCentsPayment.php on line 89
+[05-Feb-2019 00:21:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected ''data_encryption'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/ourdevwork/shopware.ourdevwork.com/custom/plugins/NetCentsPayment/Controllers/Frontend/NetCentsPayment.php on line 63
+[05-Feb-2019 00:22:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$token' (T_VARIABLE) in /home/ourdevwork/shopware.ourdevwork.com/custom/plugins/NetCentsPayment/Controllers/Frontend/NetCentsPayment.php on line 84
+[05-Feb-2019 00:48:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ourdevwork/shopware.ourdevwork.com/custom/plugins/NetCentsPayment/Controllers/Frontend/NetCentsPayment.php on line 152
