@@ -22,12 +22,12 @@ class NetCentsPayment extends Plugin
 
         $options = [
             'name' => 'cryptocurrency_payments_via_netcents',
-            'description' => 'Cryptocurrency Payments via NetCents',
+            'description' => 'Cryptocurrency via NetCents',
             'action' => 'NetCentsPayment',
             'active' => 1,
             'position' => 0,
             'additionalDescription' =>
-                '<img src="custom/plugins/NetCentsPayment/plugin.png" alt="Cryptocurrency Payments via NetCents" style="max-width:20%;" />'
+                '<img src="custom/plugins/NetCentsPayment/nc-logo.png" alt="Cryptocurrency via NetCents" style="max-width:20%;" />'
         ];
         $installer->createOrUpdate($context->getPlugin(), $options);
     }
