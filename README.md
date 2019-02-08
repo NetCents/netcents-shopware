@@ -14,7 +14,7 @@ Read below for instructions on how to set up the plugin.
 
 4. Download the shopware plugin from that page
 
-5. Inside your root directory, Upload the **custom** folder.
+5. Unzip the netcents-shopware.zip. Inside your root directory on your FTP, Upload the **custom** folder.
 
 6. Go to your Shopware backend panel » **Configuration** -> **Plugin Manager**-> **Installed**.
 
