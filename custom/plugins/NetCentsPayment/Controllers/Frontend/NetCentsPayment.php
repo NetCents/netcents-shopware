@@ -54,7 +54,7 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
             'external_id' => $order_id,
             'amount' => $this->getAmount(),
             'currency_iso' => $this->getCurrencyShortName(),
-            'callback_url' => $router->assemble(['action' => 'return']) . '?external_id=' . $order_id,
+            'callback_url' => $router->assemble(['action' => 'return']),
             'first_name' => $user['billingaddress']['firstname'],
             'last_name' => $user['billingaddress']['lastname'],
             'email' => $user['additional']['user']['email'],
@@ -65,7 +65,7 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
                 'external_id' => $order_id,
                 'amount' => $this->getAmount(),
                 'currency_iso' => $this->getCurrencyShortName(),
-                'callback_url' => $router->assemble(['action' => 'return']) . '?external_id=' . $order_id,
+                'callback_url' => $router->assemble(['action' => 'return']),
                 'first_name' => $user['billingaddress']['firstname'],
                 'last_name' => $user['billingaddress']['lastname'],
                 'email' => $user['additional']['user']['email'],
@@ -77,7 +77,7 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
 
         $api_url = $this->nc_get_api_url($config['NetCentsApiUrl']);
         $response = \NetCents\NetCents::request(
-            $api_url . '/widget/v2/encrypt',
+            $api_url . '/merchant/v2/widget_payments',
             $payload,
             $config['NetCentsCredentialsApiKey'],
             $config['NetCentsCredentialsSecretKey']
@@ -110,7 +110,6 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
     public function returnAction()
     {
         $id = $this->Request()->getParam('external_id');
-
         $transaction_id = 'NETCENTS' . $id;
         $md5_id = md5($id);
 
