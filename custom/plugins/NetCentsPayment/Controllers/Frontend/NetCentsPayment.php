@@ -60,6 +60,7 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
             'email' => $user['additional']['user']['email'],
             'webhook_url' => $router->assemble(['action' => 'webhook101010']),
             'merchant_id' => $config['NetCentsCredentialsApiKey'],
+            'hosted_payment_id' => $config['NetCentsWebPluginId'],
             'data_encryption' => array(
                 'external_id' => $order_id,
                 'amount' => $this->getAmount(),
@@ -69,39 +70,53 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
                 'last_name' => $user['billingaddress']['lastname'],
                 'email' => $user['additional']['user']['email'],
                 'webhook_url' => $router->assemble(['action' => 'webhook101010']),
-                'merchant_id' => $config['NetCentsCredentialsApiKey']
+                'merchant_id' => $config['NetCentsCredentialsApiKey'],
+                'hosted_payment_id' => $config['NetCentsWebPluginId'],
             )
         );
 
-
+        $api_url = $this->nc_get_api_url($config['NetCentsApiUrl']);
         $response = \NetCents\NetCents::request(
-          $config['NetCentsApiUrl'] . '/api/v1/widget/encrypt',
-          $payload,
-          $config['NetCentsCredentialsApiKey'],
-          $config['NetCentsCredentialsSecretKey']
+            $api_url . '/merchant/v2/widget_payments',
+            $payload,
+            $config['NetCentsCredentialsApiKey'],
+            $config['NetCentsCredentialsSecretKey']
         );
 
         $token = $response['token'];
 
         if ($token) {
-            $this->redirect($config['NetCentsApiUrl'] . "/merchant/widget?data=" . $token . "&widget_id=" . $config['NetCentsWebPluginId']);
+            $this->redirect($config['NetCentsApiUrl'] . "/widget/merchant/widget?data=" . $token);
         } else {
-            error_log(print_r(array($order), true)."\n", 3, Shopware()->DocPath() . '/error.log');
+            error_log(print_r(array($order), true) . "\n", 3, Shopware()->DocPath() . '/error.log');
         }
+    }
 
+    public function nc_get_api_url($host_url)
+    {
+        $parsed = parse_url($host_url);
+        if ($host_url == 'https://merchant.net-cents.com') {
+            $api_url = 'https://api.net-cents.com';
+        } else if ($host_url == 'https://gateway-staging.net-cents.com') {
+            $api_url = 'https://api-staging.net-cents.com';
+        } else if ($host_url == 'https://gateway-test.net-cents.com') {
+            $api_url = 'https://api-test.net-cents.com';
+        } else {
+            $api_url = $parsed['scheme'] . '://' . 'api.' . $parsed['host'];
+        }
+        return $api_url;
     }
 
     public function returnAction()
     {
         $id = $this->Request()->getParam('external_id');
-
         $transaction_id = 'NETCENTS' . $id;
         $md5_id = md5($id);
 
         $this->saveOrder(
-          $transaction_id,
-          $md5_id,
-          self::PAYMENTSTATUSPENDING
+            $transaction_id,
+            $md5_id,
+            self::PAYMENTSTATUSPENDING
         );
 
         $this->redirect(['controller' => 'checkout', 'action' => 'finish']);
@@ -109,48 +124,48 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
 
     public function webhook101010Action()
     {
-      Shopware()->Plugins()->Controller()->ViewRenderer()->setNoRender();
+        Shopware()->Plugins()->Controller()->ViewRenderer()->setNoRender();
 
-      $data = $this->Request()->getPost('data');
+        $data = $this->Request()->getPost('data');
 
-      $decoded_data = json_decode(base64_decode(urldecode($data)));
+        $decoded_data = json_decode(base64_decode(urldecode($data)));
 
-      $signature = $this->Request()->getPost('signature');
+        $signature = $this->Request()->getPost('signature');
 
-      $signing = $this->Request()->getPost('signing');
+        $signing = $this->Request()->getPost('signing');
 
-      $external_id = $decoded_data->external_id;
+        $external_id = $decoded_data->external_id;
 
-      $result = $this->checkPayment($signature, $data, $signing);
+        $result = $this->checkPayment($signature, $data, $signing);
 
-      if ($result) {
-        switch ($decoded_data->transaction_status) {
-          case 'paid':
-          $order_status = self::PAYMENTSTATUSPAID;
-          break;
-          case 'overpaid':
-          $order_status = 21;
-          break;
-          case 'underpaid':
-          $order_status = 21;
-          break;
-          default:
-          $order_status = false;
+        if ($result) {
+            switch ($decoded_data->transaction_status) {
+                case 'paid':
+                    $order_status = self::PAYMENTSTATUSPAID;
+                    break;
+                case 'overpaid':
+                    $order_status = 21;
+                    break;
+                case 'underpaid':
+                    $order_status = 21;
+                    break;
+                default:
+                    $order_status = false;
+            }
+            if ($order_status) {
+                $this->savePaymentStatus('NETCENTS' . $external_id, md5($external_id), $order_status);
+            }
         }
-        if ($order_status) {
-          $this->savePaymentStatus('NETCENTS' . $external_id, md5($external_id), $order_status);
-        }
-      }
     }
 
-    public function successAction($args){
-       return $this->forward('finish', 'checkout', null, array('sUniqueID' => $this->Request()->get('external_id')));
+    public function successAction($args)
+    {
+        return $this->forward('finish', 'checkout', null, array('sUniqueID' => $this->Request()->get('external_id')));
     }
 
 
     public function cancelAction()
-    {
-    }
+    { }
 
     public function createPaymentToken($amount, $customerId)
     {
@@ -205,7 +220,7 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
     private function getPluginVersion()
     {
         $plugin = $this->get('kernel')->getPlugins()['NetCentsPayment'];
-        $xml = simplexml_load_file( $plugin->getPath() ."/plugin.xml") or die("Error parsing plugin.xml");
+        $xml = simplexml_load_file($plugin->getPath() . "/plugin.xml") or die("Error parsing plugin.xml");
 
         return $xml->version;
     }
@@ -231,5 +246,4 @@ class Shopware_Controllers_Frontend_NetCentsPayment extends Shopware_Controllers
         $netcents_version = $this->getPluginVersion();
         return $agent = 'Shopware v' . Shopware::VERSION . ' NetCents Extension v' . $netcents_version[0]["version"];
     }
-
 }
